@@ -1,0 +1,17 @@
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+
+# Temporary files
+*.log
+*.lock
+.DS_Store
+
+# Environment files
+.env
+.env.local
+
+# Turbo cache
+.turbo/
