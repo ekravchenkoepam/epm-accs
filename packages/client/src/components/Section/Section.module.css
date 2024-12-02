@@ -1,0 +1,20 @@
+.sectionContainer {
+  width: 100%;
+  max-width: 1080px;
+  padding: 24px 0;
+}
+
+.sectionContainer:not(:last-child) {
+  border-bottom: 2px solid var(--color-grey-lighter);
+}
+
+.sectionTitle {
+  color: var(--color-title);
+  font-size: var(--font-size-base);
+}
+
+.sectionDescription {
+  color: var(--color-grey);
+  font-size: var(--font-size-base);
+  max-width: 900px;
+}

@@ -1,12 +1,12 @@
 import React from 'react';
-import './App.css';
 
-function App() {
+import './App.css';
+import { SectionsList } from "./components/Sections";
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        Client is running
-      </header>
+      <SectionsList />
     </div>
   );
 }
