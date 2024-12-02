@@ -13,11 +13,17 @@
   },
   "activities": {
     "title": "Activities",
-    "description": "“Low” means your product have no or a small amount of complex  elements like heavy animation, graphs, maps, specific widgets, drag&drop, list of drop-down menus, etc. “Medium” means the presence of complex elements on several pages. “High” means the presence of complex elements on most pages."
+    "description": "“Low” means your product have no or a small amount of complex  elements like heavy animation, graphs, maps, specific widgets, drag&drop, list of drop-down menus, etc. “Medium” means the presence of complex elements on several pages. “High” means the presence of complex elements on most pages.",
+    "assessmentTypeLabel": "Assessment type",
+    "assessmentTypeHint": "Rapid Accessibility Assessment provides a high-level overview to swiftly identify accessibility gaps in an application by analyzing key pages against specific WCAG criteria using an exploratory method. Key features:\n- highlights major accessibility issues that may apply across the application,\n- offers a preliminary compliance status, a backlog of representative issues and actionable recommendations,\n- resource-efficient and helps quickly gauge accessibility needs to aid in strategic planning and prioritizing further improvements. \nNote: Findings may evolve with a more comprehensive assessment.\n\nFull Accessibility Assessment provides a comprehensive evaluation of digital products, identifying a comprehensive list of accessibility issues. This detailed analysis may use various assistive technologies, and scope can be customized to specific parts of the product. It produces a prioritized backlog of issues and captures a detailed snapshot of the application accessibility conformance. Ideal for deeply understanding and documenting accessibility barriers, it provides precise accessibility conformance reports and actionable deliverables. Valuable for teams aiming to enhance accessibility compliance and strategies, offering a more thorough examination than the Rapid Accessibility Assessment.",
+    "additionalActivities": "Additional activities",
+    "additionalActivitiesHint": "Additional activities"
   },
   "productPages": {
     "title": "Product Pages",
-    "description": "Lorem ipsem"
+    "description": "Lorem ipsem",
+    "uniquePages": "Unique pages",
+    "templatedPages": "Templated pages"
   },
   "complexity": {
     "title": "Complexity",

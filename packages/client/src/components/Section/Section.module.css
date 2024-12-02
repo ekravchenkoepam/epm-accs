@@ -2,19 +2,38 @@
   width: 100%;
   max-width: 1080px;
   padding: 24px 0;
+
+  & .sectionTitleContainer {
+    display: flex;
+    gap: 6px;
+  }
+
+  & .sectionTitle {
+    color: var(--color-title);
+    font-size: var(--font-size-base);
+    margin: 0;
+
+    &.optional {
+      color: var(--color-grey-dark);
+    }
+  }
+
+  & .sectionDescription {
+    color: var(--color-grey);
+    font-size: var(--font-size-base);
+    max-width: 900px;
+    margin: 12px 0 18px;
+  }
 }
 
 .sectionContainer:not(:last-child) {
   border-bottom: 2px solid var(--color-grey-lighter);
 }
 
-.sectionTitle {
-  color: var(--color-title);
-  font-size: var(--font-size-base);
+.optionBlocks {
+  display: flex;
+  gap: 95px;
+  margin-top: 18px;
 }
 
-.sectionDescription {
-  color: var(--color-grey);
-  font-size: var(--font-size-base);
-  max-width: 900px;
-}
+
