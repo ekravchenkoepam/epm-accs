@@ -1,0 +1,28 @@
+/* ------------------------------ Typography ------------------------------ */
+
+:root {
+  --font-family: "Source Sans 3", serif;
+  --font-size-base: 16px;
+}
+
+/* ------------------------------ Colors ------------------------------ */
+
+:root {
+  --color-title: #303240;
+  --color-blue: #007BBD;
+  --color-blue-dark: #1A34E9;
+  --color-green: #5EE963;
+  --color-green-dark: #67A300;
+  --color-grey: #6D6D74;
+  --color-grey-dark: #6C6F80;
+  --color-grey-light: #E1E3EB;
+  --color-grey-lighter: #CED0DB;
+  --color-white: #FFFFFF;
+}
+
+/* ------------------------------ Borders ------------------------------ */
+
+:root {
+  --border-color-primary: var(--color-grey-dark);
+  --border-color-secondary: var(--color-grey-lighter);
+}

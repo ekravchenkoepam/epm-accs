@@ -1,0 +1,46 @@
+{
+  "targetStandard": {
+    "title": "Target standard",
+    "description": "Web Content Accessibility Guidelines (WCAG) is a global standard detailing how to enhance web accessibility for individuals with disabilities. ADA, Section 508, and the European Accessibility Act are legal frameworks, while WCAG is a set of technical guidelines for testing. This calculator is designed for WCAG compliance only. For other standards, please use Contact experts button for estimates.",
+    "standardTypeLabel": "Type of the standard",
+    "conformanceLevelLabel": "Conformance level",
+    "standardTypeHint": "WCAG 2.0: Suitable for basic compliance, though outdated and lacks mobile requirements. \n WCAG 2.1: Most popular and covers more accessibility needs including mobile. \n WCAG 2.2: Latest version, ideal for proactive compliance with modern legal standards.",
+    "conformanceLevelHint": "WCAG level selection depends on business needs, legal requirements and audience type. \n Level A: Basic level of accessibility to start with. \n Level AA: Extends Level A with additional criteria for wider audience, popular choice for optimal legal compliance. \n Level AAA: Most comprehensive, includes criteria from Levels A and AA."
+  },
+  "industry": {
+    "title": "Industry",
+    "description": "Gain deeper understanding of the critical role of accessibility tailored to the unique needs of your industry."
+  },
+  "activities": {
+    "title": "Activities",
+    "description": "“Low” means your product have no or a small amount of complex  elements like heavy animation, graphs, maps, specific widgets, drag&drop, list of drop-down menus, etc. “Medium” means the presence of complex elements on several pages. “High” means the presence of complex elements on most pages."
+  },
+  "productPages": {
+    "title": "Product Pages",
+    "description": "Lorem ipsem"
+  },
+  "complexity": {
+    "title": "Complexity",
+    "description": "Complexity indicates how component-dense the application is. Higher complexity level means more time is needed for thorough page verification."
+  },
+  "specificContent": {
+    "title": "Specific Content",
+    "description": "Specific content, such as PDF documents and email templates, also impacts accessibility state of the product as it is a part of the user flow. For other specific content types (e.g., DOCX, PPTX, XLSX, CSV), please use Contact experts button for estimates."
+  },
+  "interfaceLanguages": {
+    "title": "Interface Language(s)",
+    "description": "While your(?) product may support numerous languages, only those that are specifically in scope should be considered. \nVerification of the meaningfulness or accuracy of translations should also be out of scope."
+  },
+  "configurations": {
+    "title": "Configurations",
+    "description": "Configurations represent the expected testing environment coverage. Select configurations that are supported by your application and focus on the primary ones. Avoid selecting all configurations, as most issues will be applicable across them. Note that Web/Mobile Web and Mobile Native are considered different products and should be calculated separately. If the configuration you need is not listed, please contact experts."
+  },
+  "deliverables": {
+    "title": "Deliverables",
+    "description": "Deliverables consist of various documentation types provided after the accessibility assessment. These documents help users understand the assessment findings, compliance status, and recommended actions for enhancing accessibility in their application."
+  },
+  "rates": {
+    "title": "Rates",
+    "description": "Rates for activities conducted by testers and/or experts need to be specified for the final price estimation."
+  }
+}

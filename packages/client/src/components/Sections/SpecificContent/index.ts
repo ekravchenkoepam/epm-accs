@@ -1,0 +1,1 @@
+export { SpecificContent } from './SpecificContent';
