@@ -1,0 +1,4 @@
+.actionButton {
+  background: var(--color-green-dark) !important;
+  color: var(--color-white) !important;
+}

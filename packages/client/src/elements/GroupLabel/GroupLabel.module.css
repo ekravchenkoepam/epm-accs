@@ -1,0 +1,12 @@
+.groupLabelContainer {
+  display: flex;
+  gap: 5px;
+}
+
+.groupLabelText {
+  font-weight: bold;
+}
+
+.infoIcon {
+  cursor: pointer;
+}
