@@ -91,6 +91,14 @@ export enum TEMPLATED_PAGES {
   DEFAULT_PAGE = 'Default page',
 }
 
+export enum PDF_PAGES {
+  DEFAULT_PAGE = 'Default page',
+}
+
+export enum EMAIL_TEMPLATES {
+  DEFAULT_TEMPLATE = 'Default page',
+}
+
 export enum LEVELS {
   LOW = 'Low',
   MEDIUM = 'Medium',

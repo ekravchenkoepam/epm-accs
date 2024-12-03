@@ -27,11 +27,15 @@
   },
   "complexity": {
     "title": "Complexity",
-    "description": "Complexity indicates how component-dense the application is. Higher complexity level means more time is needed for thorough page verification."
+    "description": "Complexity indicates how component-dense the application is. Higher complexity level means more time is needed for thorough page verification.",
+    "productComplexity": "Product Complexity",
+    "productComplexityHint": "Product Complexity"
   },
   "specificContent": {
     "title": "Specific Content",
-    "description": "Specific content, such as PDF documents and email templates, also impacts accessibility state of the product as it is a part of the user flow. For other specific content types (e.g., DOCX, PPTX, XLSX, CSV), please use Contact experts button for estimates."
+    "description": "Specific content, such as PDF documents and email templates, also impacts accessibility state of the product as it is a part of the user flow. For other specific content types (e.g., DOCX, PPTX, XLSX, CSV), please use Contact experts button for estimates.",
+    "pdfPages": "PDF pages",
+    "emailTemplates": "Email Templates"
   },
   "interfaceLanguages": {
     "title": "Interface Language(s)",
