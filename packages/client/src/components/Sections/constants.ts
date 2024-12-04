@@ -99,6 +99,20 @@ export enum EMAIL_TEMPLATES {
   DEFAULT_TEMPLATE = 'Default page',
 }
 
+export enum INTERFACE_LANGUAGES {
+  DEFAULT_LANGUAGE = 'Product has several reading directions',
+}
+
+export enum BACKLOG_TYPES {
+  DETAILED = 'Detailed',
+  HIGH_LEVEL = 'High-level',
+}
+
+export enum ADDITIONAL_DELIVERABLES {
+  VPAT = 'VPAT',
+  TEST_RESULT_REPORT = 'Test result report'
+}
+
 export enum LEVELS {
   LOW = 'Low',
   MEDIUM = 'Medium',

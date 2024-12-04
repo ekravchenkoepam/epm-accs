@@ -3,8 +3,6 @@ import React from 'react';
 import { Radio } from 'semantic-ui-react'
 import { InputProps } from "../types/InputProps";
 
-import styles from './RadioButton.module.css'
-
 type RadioButtonProps = InputProps & {
   checked: boolean;
   label: string;
@@ -17,10 +15,12 @@ export const RadioButton: React.FC<RadioButtonProps> = ({
   onChange,
   label
 }) => {
+  const inputId = `radio-${value}`;
+
   return (
     <Radio
-      className={styles.radioButton}
-      label={label}
+      id={inputId}
+      label={<label htmlFor={inputId}>{label}</label>}
       name={name}
       value={value}
       checked={checked}

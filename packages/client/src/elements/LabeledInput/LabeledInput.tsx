@@ -1,11 +1,21 @@
 import React from 'react';
 
-import { Input } from "semantic-ui-react";
+import { Input } from 'semantic-ui-react';
 
-export const LabeledInput = () => {
+type LabeledInputProps = {
+  value: number;
+  action: string;
+  placeholder: string;
+}
+
+export const LabeledInput: React.FC<LabeledInputProps> = ({ action, placeholder, value }) => {
   return (
     <div>
-      <Input action='Search' placeholder='Search...' />
+      <Input
+        action={action}
+        placeholder={placeholder}
+        value={value}
+      />
     </div>
   );
 };

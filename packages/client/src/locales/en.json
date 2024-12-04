@@ -9,7 +9,8 @@
   },
   "industry": {
     "title": "Industry",
-    "description": "Gain deeper understanding of the critical role of accessibility tailored to the unique needs of your industry."
+    "description": "Gain deeper understanding of the critical role of accessibility tailored to the unique needs of your industry.",
+    "industryOrDomain": "Industry or Domain"
   },
   "activities": {
     "title": "Activities",
@@ -39,7 +40,8 @@
   },
   "interfaceLanguages": {
     "title": "Interface Language(s)",
-    "description": "While your(?) product may support numerous languages, only those that are specifically in scope should be considered. \nVerification of the meaningfulness or accuracy of translations should also be out of scope."
+    "description": "While your(?) product may support numerous languages, only those that are specifically in scope should be considered. \nVerification of the meaningfulness or accuracy of translations should also be out of scope.",
+    "languagesToCheck": "Languages to check"
   },
   "configurations": {
     "title": "Configurations",
@@ -47,10 +49,14 @@
   },
   "deliverables": {
     "title": "Deliverables",
-    "description": "Deliverables consist of various documentation types provided after the accessibility assessment. These documents help users understand the assessment findings, compliance status, and recommended actions for enhancing accessibility in their application."
+    "description": "Deliverables consist of various documentation types provided after the accessibility assessment. These documents help users understand the assessment findings, compliance status, and recommended actions for enhancing accessibility in their application.",
+    "typeOfBacklog": "Type of backlog",
+    "additionalDeliverables": "Additional deliverables"
   },
   "rates": {
     "title": "Rates",
-    "description": "Rates for activities conducted by testers and/or experts need to be specified for the final price estimation."
+    "description": "Rates for activities conducted by testers and/or experts need to be specified for the final price estimation.",
+    "manHourRateForTester": "Man-hour rate for tester",
+    "manHourRateForExpert": "Man-hour rate for expert"
   }
 }

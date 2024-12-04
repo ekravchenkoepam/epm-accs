@@ -1,0 +1,28 @@
+.applicationsContainer {
+  display: flex;
+  gap: 16px;
+}
+
+.platformsContainer {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
+}
+
+.platformsContainer.show {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.platformContainer {
+  margin: 10px 0;
+}
+
+.applicationGroup {
+  margin-bottom: 18px;
+}
+
+.applicationHeader {
+  margin-bottom: 10px;
+}

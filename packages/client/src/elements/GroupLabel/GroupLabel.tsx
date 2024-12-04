@@ -1,34 +1,43 @@
 import React, { useState } from 'react';
-import { Image } from "semantic-ui-react";
+import { Image } from 'semantic-ui-react';
 
-import InfoIcon from "../../assets/info.svg";
-import { BasicModal } from "../BasicModal";
+import InfoIcon from '../../assets/info.svg';
+import { BasicModal } from '../BasicModal';
 
-import styles from "./GroupLabel.module.css";
+import styles from './GroupLabel.module.css';
 
 type GroupLabelProps = {
-  sectionType: string;
   text: string;
   infoText?: string;
-  hasInfoHint?: boolean
+  hasInfoHint?: boolean;
+  isOptional?: boolean;
+  htmlFor?: string;
 }
 
 export const GroupLabel: React.FC<GroupLabelProps> = ({
-  sectionType,
   text,
   infoText,
-  hasInfoHint
+  hasInfoHint,
+  isOptional,
+  htmlFor,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div className={styles.groupLabelContainer}>
-      <div className={styles.groupLabelText}>{text}</div>
+      <label className={styles.groupLabelText} htmlFor={htmlFor}>
+        {text}
+      </label>
+      {isOptional && (
+        <div className={styles.sectionTitle}>
+          (optional)
+        </div>
+      )}
       {hasInfoHint && (
         <Image
           className={styles.infoIcon}
           src={InfoIcon}
-          alt="info-icon"
+          alt='info-icon'
           onClick={() => setIsModalOpen(true)}
         />
       )}

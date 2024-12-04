@@ -1,7 +1,7 @@
 .sectionContainer {
   width: 100%;
   max-width: 1080px;
-  padding: 24px 0;
+  padding: 0 0 24px 0;
 
   & .sectionTitleContainer {
     display: flex;
@@ -27,13 +27,19 @@
 }
 
 .sectionContainer:not(:last-child) {
-  border-bottom: 2px solid var(--color-grey-lighter);
+  /*border-bottom: 2px solid var(--color-grey-lighter);*/
 }
 
 .optionBlocks {
   display: flex;
   gap: 95px;
   margin-top: 18px;
+  flex-wrap: wrap;
+
+  /*@media (max-width: 768px) {*/
+  /*  flex-direction: column;*/
+  /*  gap: 25px;*/
+  /*}*/
 }
 
 

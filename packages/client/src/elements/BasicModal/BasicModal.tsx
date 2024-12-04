@@ -22,6 +22,7 @@ export const BasicModal: React.FC<BasicModalProps> = ({
 
   return (
     <Modal
+      closeIcon
       size={'small'}
       centered
       open={isOpen}

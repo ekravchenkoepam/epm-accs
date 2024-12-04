@@ -1,0 +1,7 @@
+.rowContainer {
+  display: flex;
+}
+
+:global(.ui.grid>.row>.column).columnSection {
+  margin-top: 48px;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Checkbox } from 'semantic-ui-react';
 
-import { InputProps } from "../types/InputProps";
+import { InputProps } from '../types/InputProps';
 
 type CheckboxButtonProps = InputProps & {
   checked: boolean;
@@ -15,9 +15,12 @@ export const CheckboxButton: React.FC<CheckboxButtonProps> = ({
   onChange,
   label,
 }) => {
+  const inputId = `checkbox-${value}`;
+
   return (
     <Checkbox
-      label={label}
+      id={inputId}
+      label={<label htmlFor={inputId}>{label}</label>}
       name={name}
       value={value}
       checked={checked}

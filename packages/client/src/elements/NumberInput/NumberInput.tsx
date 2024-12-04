@@ -13,7 +13,6 @@ export const NumberInput: React.FC<NumberInputProps> = ({
   value,
   placeholder,
   onChange,
-  label
 }) => {
   return (
     <Input
