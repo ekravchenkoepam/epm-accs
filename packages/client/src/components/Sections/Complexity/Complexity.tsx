@@ -3,6 +3,7 @@ import React from 'react';
 import { Section } from '../../Section';
 import { RadioButton } from '../../../elements/RadioButton';
 import { InputButtonGroup } from '../../InputButtonGroup';
+import { ErrorMessage } from "../../ErrorMessage";
 
 import { CommonSectionProps } from '../types';
 import { INPUT_NAMES, LEVELS } from '../constants';
@@ -22,6 +23,10 @@ export const Complexity: React.FC<CommonSectionProps> = ({ sectionType }) => {
           subSectionType={INPUT_NAMES.PRODUCT_COMPLEXITY}
           infoText={locales.complexity.productComplexityHint}
           ButtonComponent={RadioButton}
+        />
+        <ErrorMessage
+          sectionType={SECTIONS_LIST.COMPLEXITY}
+          subSectionType={INPUT_NAMES.PRODUCT_COMPLEXITY}
         />
       </div>
     </Section>

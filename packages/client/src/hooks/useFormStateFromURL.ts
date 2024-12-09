@@ -1,33 +1,26 @@
 import { useState, useEffect } from 'react';
 
-import { SECTIONS_LIST } from "../components/Sections/SectionsList/constants";
-import {
-  ACTIVITY_TYPES,
-  ASSESSMENT_TYPES,
-  CONFORMANCE_LEVEL,
-  INPUT_NAMES,
-  LEVELS,
-  WCAG_STANDARDS
-} from "../components/Sections/constants";
+import { SECTIONS_LIST } from '../components/Sections/SectionsList/constants';
+import { INPUT_NAMES } from '../components/Sections/constants';
 
 const DEFAULT_FORM_STATE = {
   [SECTIONS_LIST.TARGET_STANDARD]: {
-    [INPUT_NAMES.STANDARD_TYPE]: WCAG_STANDARDS.VERSION_2_0,
-    [INPUT_NAMES.CONFORMANCE_LEVEL]: CONFORMANCE_LEVEL.A
+    [INPUT_NAMES.STANDARD_TYPE]: null,
+    [INPUT_NAMES.CONFORMANCE_LEVEL]: null
   },
   [SECTIONS_LIST.INDUSTRY]: {
     [INPUT_NAMES.DOMAIN]: ''
   },
   [SECTIONS_LIST.ACTIVITIES]: {
-    [INPUT_NAMES.ASSESSMENT_TYPE]: ASSESSMENT_TYPES.FULL_ASSESSMENT,
-    [INPUT_NAMES.ADDITIONAL_ACTIVITIES]: [ACTIVITY_TYPES.REMEDIATION_RECOMMENDATIONS],
+    [INPUT_NAMES.ASSESSMENT_TYPE]: null,
+    [INPUT_NAMES.ADDITIONAL_ACTIVITIES]: [],
   },
   [SECTIONS_LIST.PRODUCT_PAGES]: {
-    [INPUT_NAMES.UNIQUE_PAGES]: 0,
-    [INPUT_NAMES.TEMPLATED_PAGES]: 0,
+    [INPUT_NAMES.UNIQUE_PAGES]: null,
+    [INPUT_NAMES.TEMPLATED_PAGES]: null,
   },
   [SECTIONS_LIST.COMPLEXITY]: {
-    [INPUT_NAMES.PRODUCT_COMPLEXITY]: LEVELS.LOW
+    [INPUT_NAMES.PRODUCT_COMPLEXITY]: ''
   },
   [SECTIONS_LIST.SPECIFIC_CONTENT]: {
     [INPUT_NAMES.PDF_PAGES]: null,
@@ -35,11 +28,15 @@ const DEFAULT_FORM_STATE = {
   },
   [SECTIONS_LIST.INTERFACE_LANGUAGES]: {
     [INPUT_NAMES.LANGUAGES]: null,
-    [INPUT_NAMES.HAS_SEVERAL_DIRECTIONS]: false,
+    [INPUT_NAMES.HAS_SEVERAL_DIRECTIONS]: null,
   },
   [SECTIONS_LIST.CONFIGURATIONS]: {},
   [SECTIONS_LIST.DELIVERABLES]: {
-    [INPUT_NAMES.BACKLOG_TYPE]: LEVELS.LOW
+    [INPUT_NAMES.BACKLOG_TYPE]: null,
+    [INPUT_NAMES.ADDITIONAL_DELIVERABLES]: {
+      [INPUT_NAMES.VPAT]: '',
+      [INPUT_NAMES.TEST_RESULT_REPORT]: ''
+    }
   },
   [SECTIONS_LIST.RATES]: {
     [INPUT_NAMES.MAN_HOUR_RATE_FOR_TESTER]: null,
@@ -89,12 +86,24 @@ export const useFormStateFromURL = () => {
   const updateFormState = (section: any, value: any) => {
     setFormState((prev) => ({
       ...prev,
-      // @ts-ignore
-      [section]: { ...prev[section], ...value },
+      [section]: {
+        // @ts-ignore
+        ...prev[section],
+        ...value
+      },
     }));
   };
 
-  const onCalculate = () => {
+  const updateConfiguration = (selectedApplication: string, selectedChips: Record<string, string[]>) => {
+    setFormState((prev) => ({
+      ...prev,
+      configurations: {
+        [selectedApplication]: selectedChips,
+      },
+    }));
+  };
+
+  const onCalculate = (values: any) => {
     console.log(formState)
   }
 
@@ -119,6 +128,7 @@ export const useFormStateFromURL = () => {
   return {
     formState,
     onCalculate,
-    updateFormState
+    updateFormState,
+    updateConfiguration
   };
 };

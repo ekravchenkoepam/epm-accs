@@ -1,7 +1,9 @@
 import React from 'react';
 
 import { Input } from 'semantic-ui-react'
-import { InputProps } from "../types/InputProps";
+import { InputProps } from '../types/InputProps';
+
+import styles from './NumberInput.module.css'
 
 type NumberInputProps =  InputProps & {
   label: string;
@@ -14,13 +16,25 @@ export const NumberInput: React.FC<NumberInputProps> = ({
   placeholder,
   onChange,
 }) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const inputValue = event.target.value;
+
+    if (/^[0-9]*$/.test(inputValue)) {
+      onChange(inputValue);
+    }
+  };
+
   return (
-    <Input
-      type="number"
-      name={name}
-      value={value}
-      placeholder={placeholder}
-      onChange={(_, data) => onChange(data.value as string)}
-    />
+    <div>
+      <Input
+        type="number"
+        min="0"
+        className={styles.numberInput}
+        name={name}
+        value={value}
+        placeholder={placeholder}
+        onChange={handleChange}
+      />
+    </div>
   );
 };

@@ -6,15 +6,17 @@
   & .sectionTitleContainer {
     display: flex;
     gap: 6px;
+    align-items: center;
   }
 
   & .sectionTitle {
     color: var(--color-title);
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-large);
     margin: 0;
 
     &.optional {
       color: var(--color-grey-dark);
+      font-size: var(--font-size-small);
     }
   }
 

@@ -6,6 +6,11 @@
   background: var(--background-secondary);
   border-top: 1px solid var(--color-grey-mild);
 
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+
   & button {
     background: var(--color-blue-darker) !important;
     font-size: var(--font-size-base);

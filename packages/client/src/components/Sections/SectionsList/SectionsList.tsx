@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Divider, Grid } from 'semantic-ui-react';
+import { Container, Divider, Form, Grid } from 'semantic-ui-react';
 
 import { SECTIONS_LIST } from './constants';
 import { TargetStandard } from '../TargetStandard';
@@ -38,10 +38,12 @@ export const SectionsList = () => {
           SectionComponentMap[section] && (
             <Grid.Row key={section}>
               <Grid.Column>
-                {SectionComponentMap[section]}
-                {!isLastElement(index, array) && (
-                  <Divider section className={styles.sectionDivider} />
-                )}
+                <Form>
+                  {SectionComponentMap[section]}
+                  {!isLastElement(index, array) && (
+                    <Divider section className={styles.sectionDivider} />
+                  )}
+                </Form>
               </Grid.Column>
             </Grid.Row>
           )

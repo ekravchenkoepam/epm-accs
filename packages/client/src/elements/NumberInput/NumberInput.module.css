@@ -1,0 +1,8 @@
+:global(.ui.form input[type=number])::-webkit-inner-spin-button,
+:global(.ui.form input[type=number])::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+:global(.ui.form input[type=number]) {
+  -moz-appearance: textfield;
+}

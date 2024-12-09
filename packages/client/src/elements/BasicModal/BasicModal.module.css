@@ -2,3 +2,11 @@
   background: var(--color-green-dark) !important;
   color: var(--color-white) !important;
 }
+
+.basicModal {
+  :global(.close.icon) {
+    top: 5px;
+    right: 5px;
+    color: var(--color-grey-dark);
+  }
+}

@@ -1,0 +1,61 @@
+:global(.ui.grid).chipsContainer {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.applicationsContainer {
+  display: flex;
+  gap: 16px;
+}
+
+.platformsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
+  padding: 0 30px;
+}
+
+.platformsContainer.show {
+  max-height: 1000px;
+  opacity: 1;
+  margin-top: 12px;
+}
+
+.platformContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.platformName {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.popularBlock {
+  display: flex;
+  gap: 8px;
+
+  & .starBadge {
+    height: 18px;
+    width: 18px;
+  }
+}
+
+:global(h5:first-child).chooseConfiguration {
+  margin: 18px 0 12px;
+}
+
+.infoIcon {
+  cursor: pointer;
+}
+
+.errorMessage {
+  margin-top: 12px;
+  color: var(--color-red-light);
+}
