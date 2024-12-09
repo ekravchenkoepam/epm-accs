@@ -1,0 +1,21 @@
+.chipContainer {
+  position: relative;
+
+  :global(.ui.basic.button).chipButton {
+    box-shadow: 0 0 0 1px var(--color-blue-darker) inset;
+    color: var(--color-blue-darker) !important;
+    display: flex;
+    gap: 6px;
+
+    &.selected {
+      background-color: var(--color-blue-darker) !important;
+      color: var(--color-white) !important;
+    }
+  }
+
+  :global(.ui.image).badgeIcon {
+    position: absolute;
+    top: -8px;
+    right: -4px;
+  }
+}

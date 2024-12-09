@@ -1,0 +1,7 @@
+runtime: nodejs20
+
+env_variables:
+  PORT: 1337
+
+build_env_variables:
+  GOOGLE_NODE_RUN_SCRIPTS: ''

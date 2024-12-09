@@ -2,7 +2,7 @@ export enum INPUT_NAMES {
   STANDARD_TYPE = 'standard_type',
   CONFORMANCE_LEVEL = 'conformance_level',
   DOMAIN = 'domain',
-  ASSESSMENT_TYPE = 'assignment_type',
+  ASSESSMENT_TYPE = 'assessment_type',
   ADDITIONAL_ACTIVITIES = 'additional_activities',
   UNIQUE_PAGES = 'unique_pages',
   TEMPLATED_PAGES = 'templated_pages',
@@ -11,7 +11,11 @@ export enum INPUT_NAMES {
   EMAIL_TEMPLATES = 'email_templates',
   LANGUAGES = 'languages',
   HAS_SEVERAL_DIRECTIONS = 'has_several_directions',
+  CONFIGURATIONS = 'configurations',
   BACKLOG_TYPE = 'backlog_type',
+  ADDITIONAL_DELIVERABLES = 'additional_deliverables',
+  VPAT = 'vpat',
+  TEST_RESULT_REPORT = 'test_result_report',
   MAN_HOUR_RATE_FOR_TESTER = 'man_hour_rate_for_tester',
   MAN_HOUR_RATE_FOR_EXPERT = 'man_hour_rate_or_expert',
 }
@@ -62,7 +66,7 @@ export const DOMAINS_OPTIONS = Object.entries(DOMAINS_TEXT_MAP).map(([key, text]
   return {
     key,
     text,
-    value: key,
+    value: text,
   };
 });
 
@@ -111,6 +115,16 @@ export enum BACKLOG_TYPES {
 export enum ADDITIONAL_DELIVERABLES {
   VPAT = 'VPAT',
   TEST_RESULT_REPORT = 'Test result report'
+}
+
+export enum ADDITIONAL_DELIVERABLES_KEYS {
+  VPAT = 'vpat',
+  TEST_RESULT_REPORT = 'test_result_report'
+}
+
+export enum DELIVERABLE_TYPES {
+  BY_TESTER = 'By tester',
+  BY_EXPERT = 'By expert'
 }
 
 export enum LEVELS {

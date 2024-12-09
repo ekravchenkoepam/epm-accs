@@ -16,14 +16,23 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@types/semantic-ui": "^2.2.9",
+    "axios": "^1.7.9",
+    "formik": "^2.4.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-input-mask": "^2.0.4",
+    "react-markdown": "^9.0.1",
     "react-router-dom": "^7.0.1",
     "react-scripts": "^5.0.1",
     "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "^2.1.5",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^1.5.0"
+  },
+  "devDependencies": {
+    "@types/react-input-mask": "^3.0.6",
+    "@types/react-router-dom": "^5.3.3"
   },
   "eslintConfig": {
     "extends": [
@@ -42,8 +51,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/react-router-dom": "^5.3.3"
   }
 }

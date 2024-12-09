@@ -1,11 +1,20 @@
 {
+  "header": {
+    "title": "Calculation",
+    "description_primary": "The goal of this tool is to offer indicative cost and effort estimates, useful during proposal preparations and pre-sales activities, including responding to RFXs.",
+    "description_secondary": "The provided results are intended for general understanding and must be verified and adjusted by an Accessibility Subject Matter Expert (SME) before finalizing costs with clients or completing Statements of Work (SOW)."
+  },
+  "footer": {
+    "buttonText": "Calculate"
+  },
   "targetStandard": {
+    "allFieldsRequired": "All fields are required unless marked as Optional.",
     "title": "Target standard",
     "description": "Web Content Accessibility Guidelines (WCAG) is a global standard detailing how to enhance web accessibility for individuals with disabilities. ADA, Section 508, and the European Accessibility Act are legal frameworks, while WCAG is a set of technical guidelines for testing. This calculator is designed for WCAG compliance only. For other standards, please use Contact experts button for estimates.",
     "standardTypeLabel": "Type of the standard",
     "conformanceLevelLabel": "Conformance level",
-    "standardTypeHint": "WCAG 2.0: Suitable for basic compliance, though outdated and lacks mobile requirements. \n WCAG 2.1: Most popular and covers more accessibility needs including mobile. \n WCAG 2.2: Latest version, ideal for proactive compliance with modern legal standards.",
-    "conformanceLevelHint": "WCAG level selection depends on business needs, legal requirements and audience type. \n Level A: Basic level of accessibility to start with. \n Level AA: Extends Level A with additional criteria for wider audience, popular choice for optimal legal compliance. \n Level AAA: Most comprehensive, includes criteria from Levels A and AA."
+    "standardTypeHint": "WCAG 2.0: Suitable for basic compliance, though outdated and lacks mobile requirements. \n\n WCAG 2.1: Most popular and covers more accessibility needs including mobile. \n\n WCAG 2.2: Latest version, ideal for proactive compliance with modern legal standards.",
+    "conformanceLevelHint": "WCAG level selection depends on business needs, legal requirements and audience type. \n\n Level A: Basic level of accessibility to start with. \n\n Level AA: Extends Level A with additional criteria for wider audience, popular choice for optimal legal compliance. \n\n Level AAA: Most comprehensive, includes criteria from Levels A and AA."
   },
   "industry": {
     "title": "Industry",
@@ -16,27 +25,31 @@
     "title": "Activities",
     "description": "“Low” means your product have no or a small amount of complex  elements like heavy animation, graphs, maps, specific widgets, drag&drop, list of drop-down menus, etc. “Medium” means the presence of complex elements on several pages. “High” means the presence of complex elements on most pages.",
     "assessmentTypeLabel": "Assessment type",
-    "assessmentTypeHint": "Rapid Accessibility Assessment provides a high-level overview to swiftly identify accessibility gaps in an application by analyzing key pages against specific WCAG criteria using an exploratory method. Key features:\n- highlights major accessibility issues that may apply across the application,\n- offers a preliminary compliance status, a backlog of representative issues and actionable recommendations,\n- resource-efficient and helps quickly gauge accessibility needs to aid in strategic planning and prioritizing further improvements. \nNote: Findings may evolve with a more comprehensive assessment.\n\nFull Accessibility Assessment provides a comprehensive evaluation of digital products, identifying a comprehensive list of accessibility issues. This detailed analysis may use various assistive technologies, and scope can be customized to specific parts of the product. It produces a prioritized backlog of issues and captures a detailed snapshot of the application accessibility conformance. Ideal for deeply understanding and documenting accessibility barriers, it provides precise accessibility conformance reports and actionable deliverables. Valuable for teams aiming to enhance accessibility compliance and strategies, offering a more thorough examination than the Rapid Accessibility Assessment.",
+    "assessmentTypeHint": "**Rapid Accessibility Assessment** delivers a high-level overview designed to quickly identify accessibility gaps in an application by analyzing key pages against specific WCAG criteria through an exploratory method. Key features:\n- Highlights major accessibility issues that could occur across the entire application.\n- Provides a preliminary compliance status, a backlog of representative issues, and actionable recommendations.\n- Is resource-efficient and facilitates the quick assessment of accessibility needs for strategic planning and prioritization of further improvements. Note: Findings may be refined with a more detailed assessment.\n\n**Full Accessibility Assessment** provides an extensive evaluation of digital products, thoroughly identifying a full range of accessibility issues. Key features:\n- Incorporates various configurations, tools, and assistive technologies.\n- Customizable scope to target specific parts of the product.\n- Produces a prioritized backlog of issues and provides a detailed snapshot of the application's accessibility conformance.\n- Ideal for an in-depth understanding and documentation of accessibility barriers, offering accurate accessibility conformance reports and actionable deliverables.\n- Particularly valuable for teams seeking to improve accessibility compliance and strategies, providing a deeper analysis compared to the Rapid Accessibility Assessment.",
     "additionalActivities": "Additional activities",
-    "additionalActivitiesHint": "Additional activities"
+    "additionalActivitiesHint": "Remediation recommendations: \nDetailed guidance for developers and other involved teams on how to implement fixes to meet accessibility standards, including technical specifications where applicable.\n\nBug fixes verification: \nRetesting accessibility issues after they have been addressed to confirm fixes.\nNote: This does not include regression testing.\n\nSpot checks by an Expert: \nAdditional limited testing by a highly experienced specialist. Focuses on more complex areas and/or core flows to ensure thorough compliance."
   },
   "productPages": {
     "title": "Product Pages",
     "description": "Lorem ipsem",
-    "uniquePages": "Unique pages",
-    "templatedPages": "Templated pages"
+    "uniquePagesLabel": "Unique pages",
+    "uniquePagesHint": "The following items are to be considered when determining the number of unique pages:\n\n- Include pages that differ for various user roles (e.g., guest vs. logged-in user) as separate pages if the UI changes.\n- Account for different locales if UI functionality variations exist across them.\n- For digital flows with the same URL but varying content at each stage, count each distinct screen/step as a separate page.\n- For single-page applications, treat each viewable screen as a separate page.\n- If the product is not fully implemented, estimate the number based on designs or _your best guess._",
+    "templatedPagesLabel": "Templated pages",
+    "templatedPagesHint": "Templated pages are a set of pages with the same structure but different content (e.g, Product page in e-shop app) with minimal UI difference (e.g. discount or eco marker for a product).\n \nTo assess 10 pages with the same template:\n- unique page: 1 \n- templated pages: 9\n\nTo assess several groups of templated pages, i.e. 1st template – 7 pages, 2nd template – 3 pages:\n- unique pages: 1+1 (2 in total) \n- templated pages: 6+2 (8 in total)"
   },
   "complexity": {
     "title": "Complexity",
     "description": "Complexity indicates how component-dense the application is. Higher complexity level means more time is needed for thorough page verification.",
     "productComplexity": "Product Complexity",
-    "productComplexityHint": "Product Complexity"
+    "productComplexityHint": "Low: Mainly simple elements (e.g., buttons, links, checkboxes); minimal complex elements (e.g., animations, graphs, maps, specific widgets).\n \nMedium: Predominantly simple elements with some complex elements on certain pages.\n\nHigh: Frequent complex elements across many pages.\n\nChoose a higher complexity level if accessibility was not considered during development.\nExclude integrated/3rd party components from complexity assessment if they are out of scope."
   },
   "specificContent": {
     "title": "Specific Content",
     "description": "Specific content, such as PDF documents and email templates, also impacts accessibility state of the product as it is a part of the user flow. For other specific content types (e.g., DOCX, PPTX, XLSX, CSV), please use Contact experts button for estimates.",
     "pdfPages": "PDF pages",
-    "emailTemplates": "Email Templates"
+    "pdfPagesHint": "For PDFs, provide the total number of pages across all documents, not the number of files (e.g., enter '50' for 2 PDF files consisting of 20 and 30 pages).\n\nEach email template should be counted individually.",
+    "emailTemplates": "Email Templates",
+    "emailTemplatesHint": "For PDFs, provide the total number of pages across all documents, not the number of files (e.g., enter '50' for 2 PDF files consisting of 20 and 30 pages).\n\nEach email template should be counted individually."
   },
   "interfaceLanguages": {
     "title": "Interface Language(s)",
@@ -45,18 +58,26 @@
   },
   "configurations": {
     "title": "Configurations",
-    "description": "Configurations represent the expected testing environment coverage. Select configurations that are supported by your application and focus on the primary ones. Avoid selecting all configurations, as most issues will be applicable across them. Note that Web/Mobile Web and Mobile Native are considered different products and should be calculated separately. If the configuration you need is not listed, please contact experts."
+    "description": "Configurations represent the expected testing environment coverage. Select configurations that are supported by your application and focus on the primary ones. Avoid selecting all configurations, as most issues will be applicable across them. Note that Web/Mobile Web and Mobile Native are considered different products and should be calculated separately. If the configuration you need is not listed, please contact experts.",
+    "chooseConfiguration": "Choose configuration based on application type",
+    "mostPopularConfigurations": "The most popular configurations",
+    "webApplicationWindowsLabel": "Windows",
+    "webApplicationWindowsHint": "According to a WebAIM [survey](https://webaim.org/projects/screenreadersurvey10/), JAWS is the most popular primary desktop/laptop screen reader but requires a license. The survey also identifies NVDA as the top commonly used screen reader, and it is available for free."
   },
   "deliverables": {
     "title": "Deliverables",
     "description": "Deliverables consist of various documentation types provided after the accessibility assessment. These documents help users understand the assessment findings, compliance status, and recommended actions for enhancing accessibility in their application.",
     "typeOfBacklog": "Type of backlog",
-    "additionalDeliverables": "Additional deliverables"
+    "typeOfBacklogHint": "Type of Backlog Checkbox: \nBacklog of found accessibility issues is included by default as it is the primary deliverable of the assessment.\n\nDetailed backlog: Exact steps for reproducing each bug along with other related information\n\nHigh-level backlog: Bugs without specific steps to reproduce, saving time and reducing costs",
+    "additionalDeliverables": "Additional deliverables",
+    "additionalDeliverablesHint": "VPAT/ACR Checkbox: \n\nThe VPAT (Voluntary Product Accessibility Template) is a document that outlines accessibility standards and criteria for products. An Accessibility Conformance Report (ACR), derived from the VPAT, is an industry-standard report that details your application's compliance status. This is pre-selected by default for rapid assessments and can be compiled by a tester or an expert.\n\nTest Result Report Checkbox: \n\nTest Result Report is a comprehensive summary document that may include a detailed explanation of the activities performed during the assessment, additional metrics and statistics, recommendations based on the results, and a backlog of identified issues. This report can be compiled by a tester or an expert."
   },
   "rates": {
     "title": "Rates",
     "description": "Rates for activities conducted by testers and/or experts need to be specified for the final price estimation.",
     "manHourRateForTester": "Man-hour rate for tester",
-    "manHourRateForExpert": "Man-hour rate for expert"
+    "manHourRateForTesterHint": "Activities typically covered by a tester:\n\nFull or rapid assessment\n\nBug fixes verification\n\nReporting",
+    "manHourRateForExpert": "Man-hour rate for expert",
+    "manHourRateForExpertHint": "Activities typically covered by an expet:\n\nRemediation recommendations\n\nSpot checks\n\nReporting"
   }
 }

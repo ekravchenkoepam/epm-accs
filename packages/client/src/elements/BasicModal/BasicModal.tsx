@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Modal } from 'semantic-ui-react'
-
-import { formatTextWithBreaks } from "../../helpers/formatTextWithBreaks";
+import Markdown from 'react-markdown'
 
 import styles from './BasicModal.module.css'
 
@@ -18,27 +17,32 @@ export const BasicModal: React.FC<BasicModalProps> = ({
   content,
   onClose
 }) => {
-  const formattedText = formatTextWithBreaks({ content });
-
   return (
     <Modal
       closeIcon
       size={'small'}
       centered
       open={isOpen}
-      onClose={() => {}}
+      onClose={onClose}
       closeOnEscape
       closeOnDimmerClick={true}
+      className={styles.basicModal}
     >
       <Modal.Header>
         {title}
       </Modal.Header>
       <Modal.Content>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: formattedText || '',
+        <Markdown
+          components={{
+            a: ({ href, children }) => (
+              <a href={href} target="_blank" rel="noopener noreferrer">
+                {children}
+              </a>
+            ),
           }}
-        />
+        >
+          {content}
+        </Markdown>
       </Modal.Content>
       <Modal.Actions>
         <Button basic color='black' onClick={onClose}>

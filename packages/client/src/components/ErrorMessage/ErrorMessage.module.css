@@ -1,0 +1,4 @@
+.errorMessage {
+  margin-top: 12px;
+  color: var(--color-red-light);
+}

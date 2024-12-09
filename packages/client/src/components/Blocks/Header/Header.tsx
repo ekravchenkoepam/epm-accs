@@ -1,25 +1,20 @@
 import React from 'react';
 import { Container } from 'semantic-ui-react';
 
-import styles from './Header.module.css'
+import styles from './Header.module.css';
+import locales from '../../../locales/en.json';
 
 export const Header = () => {
   return (
     <div className={styles.sectionWrapper}>
       <Container>
-        <h1>Calculation</h1>
+        <h1>{locales.header.title}</h1>
         <div className={styles.descriptionContainer}>
           <div>
-            The goal of this tool is to offer indicative cost and effort estimates, useful during proposal preparations
-            and pre-sales activities, including responding to RFXs.
+            {locales.header.description_primary}
           </div>
           <div>
-            The provided results are intended for general understanding and must be verified and adjusted by an
-            Accessibility Subject Matter Expert (SME) before finalizing costs with clients or completing Statements of
-            Work (SOW).
-          </div>
-          <div>
-            All fields are required unless marked as Optional.
+            {locales.header.description_secondary}
           </div>
         </div>
       </Container>
